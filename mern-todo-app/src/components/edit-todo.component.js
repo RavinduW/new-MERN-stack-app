@@ -58,7 +58,7 @@ export default class EditTodo extends Component{
             todo_completed: !this.state.todo_completed
         });
     }
-
+//On submit function
     onSubmit(e){
         e.preventDefault();
         const obj = {
@@ -103,7 +103,7 @@ export default class EditTodo extends Component{
                         <div className="form-check">
                             <input type="checkbox" className="form-check-input" id="completedCheckbox" name="completedCheckbox" onChange={this.onChangeTodoCompleted} checked={this.state.todo_completed} value={this.props.todo_completed}/>
                             <label className="form-check-label" htmlFor="completedCheckbox">
-                            Completed
+                            Task Completed 
                             </label>
                         </div>
                         <br/>
